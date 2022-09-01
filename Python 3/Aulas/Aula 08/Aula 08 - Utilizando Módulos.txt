@@ -1,0 +1,25 @@
+Para importar uma biblioteca com todas as suas funcionalidades, utilizamos: "import <biblioteca>"
+Se quiser importar apenas uma funcionalidade da biblioteca, utilizamos: "from <biblioteca> import <funcionalidade>"
+Se quiser importar duas ou mais funcionalidades, utiliza a ",": "from math import sqrt, factorial"
+
+Módulo math:
+    funcionalidade ceil - Faz o arredondamento pra cima
+    funcionalidade floor - Faz o arredondamento pra baixo
+    funcionalidade trunc - Faz a truncagem, eliminando os nº depois da virgula, sem arredondar
+    funcionalidade pow - Calcula a potência, semelhante ao **
+    funcionalidade sqrt - Calcula a raiz quadrada
+    funcionalidade factorial - Calcula o fatorial
+
+import math
+
+Caso a importação seja feita de todas as funcionalidades "import math", a forma de chamar no código, será com um "."
+
+raiz = math.sqrt(5)
+
+
+import random
+num = random.random()
+print(num)
+
+num = random.randint(1, 10)
+print(num)

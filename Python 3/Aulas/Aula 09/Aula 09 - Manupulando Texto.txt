@@ -1,0 +1,37 @@
+frase = 'Curso em Video Python'
+frase_espaco = '   Aprenda Python  '
+
+## Fatiamento ##
+frase[9] - Retorna a letra no index 9
+frase[9:13] - Retorna os caracteres de 9 a 12, não retorna o 13 pois ele é excluído da sequência
+frase[9:21] - Retorna os caracteres de 9 a 20, não retorna o 21 pois ele é excluído da sequência
+frase[9:21:2] - Retorna os caracteres de 9 a 20, pulando de 2 em 2
+frase[:14] - Retorna do início ao caracter 13, se não for informado o início, ele inicia do index 0
+frase[15:] - Retorna do caracter 15 ao final, se não for informado o fim, ele finaliza no último caracter
+frase[9::3] - Retorna os caracteres de 9 ao fim, pulando de 3 em 3
+
+## Análise ##
+len(frase) - Retorna o comprimento
+frase.count('o') - Retorna quantos caracteres 'o' existem na cadeia
+frase.count('o',0,13) - Retorna quantos caracteres 'o' existem na cadeia fatiada, de 0 a 12
+frase.find('deo') - Retorna em qual posição se iniciou 'deo' na cadeia, em nosso caso, index 11
+frase.find('Android') - Quando não existe o valor procurado, é retornado -1
+'Curso' in frase - Indica True caso 'Curso' exista na cadeia ou False, caso não exista
+
+## Transformação ##
+frase.replace('Python', 'Android') - Substitui tudo que for 'Python' por 'Android', na cadeia de caracter
+frase.upper() - Transforma tudo que for minúsculo para MAIÚSCULO
+frase.lower() - Transforma tudo que for MAIÚSCULO para minúsculo
+frase.capitalize() - Transforma tudo para minúsculo, e mantém a primeira em MAIÚSCULO
+frase.title() - Transforma a primeira letra de cada palavra em MAIÚSCULA
+
+frase_espaco.strip() - Remove os espaços excedentes no início e no fim
+frase_espaco.rstrip() - Remove os espaços excedentes da direita, ou seja, do fim
+frase_espaco.lstrip() - Remove os espaços excedentes da esquerda, ou seja, do início
+
+## Divisão ##
+frase.split() - Faz uma divisão onde tiver espaços (por padrão) na cadeia de caracteres, criando novas cadeias em uma lista.
+
+## Junção ##
+'-'.join(frase) - Faz a junção das palavaras em uma lista, utilizando o '-' como separador, se quiser um espaço coloca ' '
+

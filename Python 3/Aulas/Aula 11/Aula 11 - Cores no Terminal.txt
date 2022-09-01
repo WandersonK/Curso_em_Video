@@ -1,0 +1,43 @@
+Padrão ANSI (escape sequence) que por padrão normalmente é o \ "barra invertida"
+\<cor>
+
+No Python para representar uma cor coloca o contra barra e o código 033, abre colchetes e coloca a letra m
+\033[m
+Se deixar sem a configuração da cor, ele limpa a formatação, ideal para fechar a configuração, e não pegar o texto todo.
+Entre o "[" e o "m", coloca-se a estilização
+
+Ex.: \033[0;33;44m
+
+Onde nesse caso, o 0 representa o Style, o 33 representa Text e o 44 representa o Back (background).
+
+Códigos que funcionam melhor para terminal no Python
+
+Imagem ilustrativa: Padrão ANSI Cores Python.png
+
+Códigos para Style:
+0 - None, sem estilo nenhum
+1 - Bold, Negrito
+4 - Underline, Sublinhado
+7 - Negative, inverte as configurações
+
+Códigos para Text:
+30 - Black
+31 - Vermelho
+32 - Verde
+33 - Amarelo
+34 - Azul
+35 - Magenta
+36 - Ciano
+37 - Cinza
+97 - Branco
+
+Códigos para Back
+40 - Black
+41 - Vermelho
+42 - Verde
+43 - Amarelo
+44 - Azul
+45 - Magenta
+46 - Ciano
+47 - Cinza
+107 - Branco

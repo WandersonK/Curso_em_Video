@@ -1,0 +1,5 @@
+if carro.esquerda():
+    Bloco True
+else:
+    Bloco False
+
