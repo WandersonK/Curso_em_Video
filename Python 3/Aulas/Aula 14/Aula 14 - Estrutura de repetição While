@@ -1,0 +1,18 @@
+Estutura de repetição com teste lógico
+
+while (enquanto)
+
+enquanto não maçã                   while not maçã:
+    passo                               passo
+pega                                pega
+
+
+enquanto não maçã                   while not maçã
+    se tiver chão                       if tiver chão:
+        passo                               passo
+    se tiver buraco                     if tiver buraco:
+        pula                                pula
+    se tiver moeda                      if tiver moeda:
+        pega                                pega
+pega                                pega
+
