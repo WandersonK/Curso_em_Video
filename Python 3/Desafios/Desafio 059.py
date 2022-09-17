@@ -8,20 +8,21 @@
 Seu programa deverá realizar a operação solicitada em cada caso.
 """
 
-from time import sleep
-
 num1 = int(input("Informe o 1º valor: "))
 num2 = int(input("Informe o 2º valor: "))
 
-opcao = int(input("""O que você gostaria de fazer:
+opcao = 0
+
+while opcao != 5:
+    opcao = int(input("""
+O que você gostaria de fazer:
 [1] somar
 [2] multiplicar
 [3] maior
 [4] novos números
 [5] sair do programa
 >> """))
-
-while 1 <= opcao < 5:
+    
     if opcao == 1:
         print(f"{num1} + {num2} = {num1 + num2}")
     if opcao == 2:
@@ -32,16 +33,7 @@ while 1 <= opcao < 5:
     if opcao == 4:
         num1 = int(input("Informe o 1º valor: "))
         num2 = int(input("Informe o 2º valor: "))
-    
-    sleep(1)
-    
-    opcao = int(input("""
-O que você gostaria de fazer:
-[1] somar
-[2] multiplicar
-[3] maior
-[4] novos números
-[5] sair do programa
->> """))
+    if opcao < 1 or opcao > 5:
+        print("Opção Inválida, tente novamente.")
 
 print("FIM")

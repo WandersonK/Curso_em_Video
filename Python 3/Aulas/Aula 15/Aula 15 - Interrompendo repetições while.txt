@@ -1,0 +1,12 @@
+enquanto Verdadeiro                         while True:
+    se tiver chão                               if tiver chão:
+        passo                                       passo
+    se tiver buraco                             if tiver buraco:
+        pula                                        pula
+    se tiver moeda                              if tiver moeda:
+        pega                                        pega
+    se tiver troféu                             if tiver troféu:
+        pula                                        pula
+        interrompa                                  break
+pega                                        pega
+

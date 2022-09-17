@@ -6,5 +6,16 @@ razao = int(input("Informe a razão da PA: "))
 print("\nA PA para os dados informados é: ")
 
 for i in range(0, 10):
-    print(primeiro_termo)
+    print(primeiro_termo, end=' -> ')
     primeiro_termo += razao
+print("FIM")
+
+
+""" FORMA GUANABARA """
+
+primeiro = int(input('Primeiro termo: '))
+razão = int(input('Razão: '))
+décimo = primeiro + (10 - 1) * razão
+for c in range(primeiro, décimo + razao, razão):
+    print('{} '. format(c), end='-> ')
+print('ACABOU')
