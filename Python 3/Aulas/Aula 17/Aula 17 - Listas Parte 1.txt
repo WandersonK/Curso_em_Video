@@ -1,0 +1,41 @@
+lanche = ['hamburguer', 'suco', 'pizza', 'picole']
+print(lanche)
+
+lanche.append('cookie') # Adiciona um item ao fim da lista
+print(lanche)
+
+lanche.insert(0, 'cachorro quente') # Adiciona um item em um lugar especificado na lista
+print(lanche)
+
+del lanche[3] # Deleta um item específico
+print(lanche)
+
+lanche.pop(3) # Deleta um item específico
+print(lanche)
+
+lanche.pop() # Normalmente o pop é pra deletar o último, se passado isoladamente, mas se passar o parâmetro, deleta o especificado
+print(lanche)
+
+lanche.remove('hamburguer') # Deleta pelo nome do item desejado
+print(lanche)
+
+# Se tentar remover um item que não existe, ocorrerá um erro. Mas para contornar, pode-se usar o if
+
+if 'pizza' in lanche:
+    lanche.remove('pizza')
+    
+# Criando uma lista a partir de um range
+
+valores = list(range(4, 11)) # A função list cria uma lista
+print(valores)
+
+valores = [8, 2, 5, 4, 9, 3, 0]
+print(valores)
+
+valores.sort() # Ordena a lista em ordem crescente
+print(valores)
+
+valores.sort(reverse=True) # Ordena a lista em ordem decrescente
+print(valores)
+
+print(len(valores)) # o len mostra o tamanho da lista

@@ -18,3 +18,15 @@ for i in num_aleatorios:
 
 print(f"\nO maior valor sorteador foi {max(num_aleatorios)}")
 print(f'O menor valor sorteador foi {min(num_aleatorios)}')
+
+
+
+#  Forma do Guanabara
+
+numeros = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10))
+
+print('Os valores sorteados foram ', end='')
+for n in numeros:
+    print(f'{n} ', end='')
+print(f'\nO maior valor sorteado foi {max(numeros)}')
+print(f'O menor valor sorteado foi {min(numeros)}')
