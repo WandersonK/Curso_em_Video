@@ -1,0 +1,31 @@
+dados = dict()
+dados = {}
+
+dados = {'nome':'Pedro', 'idade':25}
+print(dados['nome']) # Pedro
+print(dados['idade']) # 25
+
+dados['sexo'] = 'M' # Adiciona um novo elemento
+del dados['idade'] # Deleta o elemento idade
+
+
+filme = {'titulo':'Star Wars',
+        'ano',1997,
+        'diretor':'George Lucas'    
+}
+print(filme.values()) # Retorna todos os valores
+print(filme.keys()) # Retorna todas as chaves
+print(filme.items()) # Retorna todos os itens (chave mais valor)
+
+for k, v in filme.items():
+    print(f'O filme {k} é {v}') # O titulo é Star Wars
+                                # O ano é 1977
+                                # O diretor é George Lucas
+
+locadora = [{'titulo':'Star Wars', 'ano':1977, 'diretor':'George Lucas'},
+            {'titulo':'Avengers', 'ano':2012, 'diretor':'Joss Whendon'},
+            {'titulo':'Matrix', 'ano':1999, 'diretor':'Wachowski'}
+            ]
+
+print(locadora[0]['ano']) # 1977
+print(locadora[2]['titulo']) # Matrix

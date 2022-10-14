@@ -1,0 +1,22 @@
+dados = list()
+dados.append('Pedro')
+dados.append(25)
+print(dados)
+
+Listas Compostas - A partir da lista dados nós criaremos uma lista pessoas que terá a lista dados (listas compostas (lista de lista))
+pessoas = list()
+pessoas.append(dados[:])
+
+[['Pedro', 25]]
+
+Na lista pessoas podemos adicionar mais listas
+
+pessoas
+[ ['Pedro', 25], ['Maria', 19], ['João', 32] ]
+      0     1        0      1       0     1
+         0               1             2
+
+print(pessoas[0][0])  -  Pedro
+print(pessoas[1][1])  -  19
+print(pessoas[2][0])  -  João
+print(pessoas[1])     -  ['Maria', 19]
