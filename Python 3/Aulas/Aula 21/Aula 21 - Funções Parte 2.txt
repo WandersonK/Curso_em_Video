@@ -1,0 +1,115 @@
+-> Interactive Help
+    help(<comando>)
+    help(print)
+
+Outra forma de verificar a ajuda é com o __doc__, nesse caso será mais uma documentação do comando
+    print(input.__doc__)
+utilizamos o input para verificar a doc dele.
+
+
+-> docstrings
+    É a documentação de algo.
+    Para criar uma docstring, utilizamos 3 aspas duplas.
+
+    ex:
+    Suponhamos que tenho a função contador
+
+        def contador(i, f, p):
+            c = i
+            while c <= f:
+                print(f'{c}', end='..')
+                c += p
+            print('FIM!')
+
+    Se alguém quiser saber oq a função faz e utilizar o help(), não terá uma descrição necessária, mas para incluir uma doc a ela
+    logo após a linha da def contador(), incluímos entre um conjunto de 3 aspas duplas a descrição.
+
+        def contador(i, f, p):
+            """
+            -> Faz uma contagem e mostra na tela.
+            :param i: início da contagem
+            :param f: fim da contagem
+            :param p: passo da contagem
+            :return: sem retorno
+            """
+            c = i
+            while c <= f:
+                print(f'{c}', end='..')
+                c += p
+            print('FIM!')
+
+            help(contador)
+        
+    Assim ao chamar o help para a função contador, teremos uma descrição do que ela faz.
+
+-> Argumentos opcionais
+
+    No Python podemos tornar opcionais os argumentos que serão passados para a função. Para fazer isso, basta atribuir um valor
+    nulo na função.
+
+    Ex.:
+        def soma(a=0, b=0, c=0):
+            s = a + b + c
+            print(f'A soma vale {s}')
+
+        soma(3, 2, 5)
+        soma(8, 4)
+        soma()
+
+    Nesse exemplo todos são opcionais, mas se quiser apenas o c como opcional, atribui valor somente a ele c=0.
+
+-> Escopo de Variáveis
+
+    Escopo global
+        O código todo consegue utilizar
+    Escopo local
+        Onde ela está pode ser utilizada
+
+    def funcao():
+        n1 = 4
+        print(f'N1 dentro vale {n1}')
+    
+    n1 = 2
+    funcao()
+    print(f'N1 fora vale {n1}')
+
+    Neste exemplo o n1 da função é local, e o n1 fora é global.
+
+    Para que uma variável local, seja utilizada como global, podemos iniciar ela como "global".
+
+    global <nome da variável>
+
+    exemplo:
+    def teste(b): # Escopo Local
+        global a
+        a = 8
+        b += 4
+        c = 2
+        print(f'A dentro vale {a}')
+        print(f'B dentro vale {b}')
+        print(f'C dentro vale {c}')
+
+    # Escopo Global
+    a = 5
+    teste(a)
+    print(f'A fora vale {a}')
+
+    Aqui a variável global a foi alterada ao ser chamada na função teste, pois com o comando global, foi utilizada a global,
+    mesmo estando em um escopo local.
+
+-> Retorno de resultados
+
+    As funções em python podem ou não retornar valores.
+    Para ter um retorno utilizamos o "return".
+
+    exemplo:
+    
+    def somar(a=0, b=0, c=0):
+        s = a + b + c
+        return s
+    
+    r1 = somar(3, 2, 5)
+    r2 = somar(1, 7)
+    r3 = somar(4)
+
+    print(f'Meus cálculos deram {r1}, {r2}, {r3}.')

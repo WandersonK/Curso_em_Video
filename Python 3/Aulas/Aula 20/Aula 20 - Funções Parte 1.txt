@@ -1,0 +1,33 @@
+Funções são Rotinas, coisas feitas com frequêntimente.
+No Python para declarar uma função personalizada, usa-se "def"
+
+def mostraLinha():
+    print('--------------------')
+
+mostraLinha()
+
+
+def mensagem(msg):
+    print('--------------------')
+    print(msg)
+    print('--------------------')
+
+mensagem('SISTEMA DE ALUNOS')
+
+
+
+Empacotamento
+contador(5, 7, 3, 1, 4)
+contador(8, 4, 7)
+
+A quantidade de valores passados variou.
+
+def contador(*núm):
+    ....
+
+contador(5, 7, 3, 1, 4)
+contador(8, 4, 7)
+
+Ou seja, independente da quantidade de parâmetros que forem passados, os valores serão jogados em núm.
+Para isso utiliza-se o *
+Ao fazer isso, é criado uma tupla com os valores passados, ou seja, núm é uma tupla com os valores.
