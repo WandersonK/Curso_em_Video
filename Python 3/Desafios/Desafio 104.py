@@ -3,9 +3,13 @@ aceitar apenas um valor numérico.
 Ex:
 n = leiaInt('Digite um n')"""
 
-def leiaInt():
-    return
-
+def leiaInt(msg):
+    while True:
+        digitado = input(msg)
+        
+        if digitado.isnumeric():
+            return digitado
+        print('\033[31mERRO! Digite um número inteiro válido.\033[m')
 
 
 n = leiaInt('Digite um número: ')
