@@ -1,0 +1,6 @@
+Vantagens da Modularização:
+    Organização do código
+    Facilita na manutenção
+    Ocultação do código detalhado
+    Reutilização em outros projetos
+    

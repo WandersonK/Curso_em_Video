@@ -1,0 +1,50 @@
+Exception (Exceção)
+
+primt(x)
+    Possui um erro de sintaxe, pois no lugar no "n", está o "m"
+
+print(x)
+    Já aqui, o comando print está correto, entretanto, a variável x não está definida, gerando um NameError
+    Para isso se da o nome de Exceção
+
+n = int(input('Num'))
+    Se ao executar, inserir 'oito', irá gerar a exceção ValueError
+
+a = 5
+b = 0
+r = a / b
+    Irá gerar a exceção ZeroDivisionError
+
+r = 2 / '2'
+    Irá gerar a exceção TypeError
+
+lst = [3, 6, 4]
+print(lst[3])
+    Irá gerar a exceção IndexError
+
+import uteis
+    Se o módulo uteis não existir, irá gerar a exceção ModuleNotFoundError
+
+Para tratar essas exceções, no python podemos utilizar o:
+try: (Tente)
+    OPERAÇÃO
+except: (Exceção)
+    FALHOU
+else:
+    DEU CERTO
+finally:
+    CERTO/FALHA, Independente se deu certo ou errado
+
+No try podem haver diversos except, para tratamento dos erros:
+try:
+    OPERAÇÃO
+except TypeError:
+    FALHOU
+except ValueError:
+    FALHOU
+except OSError:
+    FALHOU
+else:
+    DEU CERTO
+finally:
+    CERTO/FALHA, Independente se deu certo ou errado
